@@ -2,7 +2,6 @@ import React from "react";
 import Emoji from "./Emoji";
 import { RoughNotation } from "react-rough-notation";
 import Link from "next/link";
-import CareerCard from "./CareerCard";
 
 export default function About() {
   return (
@@ -71,14 +70,13 @@ export default function About() {
         <p className="font-mono text-lg">
           Hey! I'm Eugene Goh, a 18 y/o Software Engineer based in Kuala Lumpur{" "}
           <Emoji symbol="🇲🇾" label="MY" />, specializing in JavaScript, GraphQL,
-          and Web3 technologies. On my free time, I study Computer Science
-          independently while also sharing what I've learned on Twitter!
+          and Web3 technologies. Welcome to my digital garden where I share what
+          I'm learning about shipping impactful products, becoming a better
+          engineer and growing a career in tech.
         </p>
       </div>
 
       <hr className="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
-
-      <CareerCard />
     </div>
   );
 }
