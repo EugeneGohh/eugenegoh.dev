@@ -4,7 +4,7 @@ import Link from "next/link";
 import CareerCard from "../../components/CareerCard";
 import Emoji from "../../components/Emoji";
 
-// Query For Companies Details
+// Query Companies & Positions Data
 const companyDataQuery = `*[_type == "company"]{
   _id, companyName, companyDescription,
   companyUrl, positionName, positionType,
@@ -35,7 +35,7 @@ export default function Career({ companyDetails }) {
           </svg>
         </Link>
 
-        <h1 className="font-sans font-bold text-4xl">Wall of Positions/Experience</h1>
+        <h1 className="font-sans font-bold text-4xl">Wall of Experience</h1>
       </div>
 
       <div className="grid grid-cols md:grid-cols-3 sm:grid-cols-2 place-content-around p-2">
@@ -61,13 +61,15 @@ export default function Career({ companyDetails }) {
         </div>
         <div className="relative flex justify-center">
           <span className="bg-white px-4 text-sm text-gray-500 text-center">
-             Wall of Work Images
+            Wall of Work Images
           </span>
         </div>
       </div>
 
       <div>
-        <p className="text-center font-mono font-semibold">To be uploaded <Emoji symbol="🔥" label="Fire" /></p>
+        <p className="text-center font-mono font-semibold">
+          To be uploaded <Emoji symbol="🔥" label="Fire" />
+        </p>
       </div>
     </div>
   );
