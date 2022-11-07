@@ -16,26 +16,40 @@ export default function Career({ companyDetails }) {
   const companyDetailsData = companyDetails;
 
   return (
-    <div>
-      <div className="flex justify-start px-6 py-12 m-h-full">
+    <>
+      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-2 lg:px-6">
         <Link href="/">
-          <svg
-            className="w-9 h-10"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+          <button
+            aria-label="Toggle Dark Mode"
+            type="button"
+            className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center  hover:ring-2 ring-gray-300  transition-all my-4"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M15 19l-7-7 7-7"
-            ></path>
-          </svg>
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M11 19l-7-7 7-7m8 14l-7-7 7-7"
+              />
+            </svg>
+          </button>
         </Link>
-
-        <h1 className="font-sans font-bold text-4xl">Wall of Experience</h1>
+        <div className="mx-auto max-w-screen-sm lg:mb-16 mb-8">
+          <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
+            <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+              {`Wall of Experience`}
+            </h1>
+            <p className="mb-4 text-gray-600 dark:text-gray-400">
+              {`These are a collection of code snippets I've used in the past and saved. Some are Serverless Functions, which include set up instructions. Others are anything from random CSS snippets to Node.js scripts.`}
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="grid grid-cols md:grid-cols-3 sm:grid-cols-2 place-content-around p-2">
@@ -71,7 +85,7 @@ export default function Career({ companyDetails }) {
           To be uploaded <Emoji symbol="🔥" label="Fire" />
         </p>
       </div>
-    </div>
+    </>
   );
 }
 
