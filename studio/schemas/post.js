@@ -4,6 +4,17 @@ export default {
   title: "Post",
   fields: [
     {
+      type: "slug",
+      name: "slug",
+      title: "Slug",
+      options: {
+        source: "title",
+        maxLength: 200, // will be ignored if slugify is set
+        slugify: (input) =>
+          input.toLowerCase().replace(/\s+/g, "-").slice(0, 200),
+      },
+    },
+    {
       name: "blogTitle",
       type: "string",
       title: "Blog Title",
@@ -29,19 +40,18 @@ export default {
       type: "string",
       title: "Author",
     },
-    {
-      name: "blogUrl",
-      type: "url",
-      title: "Blog URL",
-    },
+    // {
+    //   name: "blogUrl",
+    //   type: "url",
+    //   title: "Blog URL",
+    // },
     {
       name: "lastUpdatedAt",
-      type: "datetime",
+      type: "date",
       title: "Last Updated At",
       options: {
-        dateFormat: "YYYY-MM",
-        timeFormat: "HH:mm",
-        timeStep: 15,
+        dateFormat: "YYYY-MM-DD",
+        calendarTodayLabel: "Today",
       },
     },
   ],
