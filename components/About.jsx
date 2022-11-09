@@ -14,20 +14,27 @@ export default function About() {
           type="button"
           className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center  hover:ring-2 ring-gray-300  transition-all mx-2"
         >
-          <svg
-            className="w-6 h-6 m-2"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+          <a
+            href="/files/EugeneGohYuHinResume.pdf"
+            alt="alt text"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={3}
-              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-            />
-          </svg>
+            <svg
+              className="w-6 h-6 m-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={3}
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              />
+            </svg>
+          </a>
         </button>
       </div>
 
@@ -54,19 +61,6 @@ export default function About() {
               color="#f8acff"
             >
               {`Experience Journey`}
-            </RoughNotation>
-          </Link>
-        </div>
-
-        <div>
-          <Link href="/" className="font-sans px-2 decoration-sky-500/30">
-            <RoughNotation
-              type="highlight"
-              strokeWidth={0.1}
-              show="true"
-              color="#ebf4f5"
-            >
-              {`About Me`}
             </RoughNotation>
           </Link>
         </div>
