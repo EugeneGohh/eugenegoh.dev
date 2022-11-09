@@ -40,11 +40,11 @@ export default {
       type: "string",
       title: "Author",
     },
-    // {
-    //   name: "blogUrl",
-    //   type: "url",
-    //   title: "Blog URL",
-    // },
+    {
+      name: "blogUrl",
+      type: "url",
+      title: "Blog URL",
+    },
     {
       name: "lastUpdatedAt",
       type: "date",
