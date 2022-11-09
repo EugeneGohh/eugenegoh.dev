@@ -34,11 +34,6 @@ export default function PostCard({
         </p>
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-4">
-            <img
-              className="w-7 h-7 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-              alt="Jese Leos avatar"
-            />
             <span className="font-medium dark:text-white">{blogAuthor}</span>
           </div>
           <Link

@@ -5,7 +5,7 @@ import { clientConfig } from "../../lib/sanity";
 
 // Query Companies & Positions Data
 const postDataQuery = `*[_type == "post"]{
-  _id, author, lastUpdatedAt,
+  _id, author, lastUpdatedAt, blogUrl,
   blogDescription, blogTitle, typeOfContent,
   "slug": slug.current
 }`;
@@ -27,7 +27,7 @@ export default function Posts({ postDetails }) {
                 blogAuthor={postDetail.author}
                 blogDescription={postDetail.blogDescription}
                 updatedAt={postDetail.lastUpdatedAt}
-                link={`/posts/${postDetail.slug}`}
+                link={postDetail.blogUrl}
               />
             </div>
           ))}
