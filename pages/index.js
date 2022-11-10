@@ -14,7 +14,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Eugene Goh" />
         <meta property="og:title" content="Eugene Goh" />
-        <meta property="og:image" content="/ogimage.png" />
+        <meta property="og:image" content="https://eugenegoh-dev-revamp.vercel.app/ogimage.png" />
         <meta
           property="og:description"
           content="Hey! I'm Eugene Goh, a 18 y/o Software Engineer based in Kuala Lumpur 🇲🇾, specializing in JavaScript, GraphQL, and Web3 technologies. Welcome to my digital garden where I share what I'm learning about shipping impactful products, becoming a better engineer and growing a career in tech."
