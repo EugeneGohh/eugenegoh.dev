@@ -18,7 +18,7 @@ export default function Home() {
           content="Hey! I'm Eugene Goh, a 18 y/o Software Engineer based in Kuala Lumpur 🇲🇾, specializing in JavaScript, GraphQL, and Web3 technologies. Welcome to my digital garden where I share what I'm learning about shipping impactful products, becoming a better engineer and growing a career in tech."
         />
         <meta
-          property="og:image"
+          property="og:image:secure_url"
           content="https://cdn.sanity.io/images/c93qx1p7/production/58ec167046c874704693721f18e16596090fa9e2-1280x832.png"
         />
         <meta property="og:type" content="website" />
