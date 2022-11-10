@@ -19,7 +19,7 @@ export default function Home() {
         />
         <meta
           property="og:image:secure_url"
-          content="https://cdn.sanity.io/images/c93qx1p7/production/58ec167046c874704693721f18e16596090fa9e2-1280x832.png"
+          content="https://eugenegoh-dev-revamp.vercel.app/images/ogimage.png"
         />
         <meta property="og:type" content="website" />
         <meta
