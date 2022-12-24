@@ -9,7 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.4.4",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@vercel/analytics": "^0.1.4",
+    "framer-motion": "^8.0.2",
     "next": "13.0.0",
     "next-sanity": "^1.0.2",
     "react": "18.2.0",

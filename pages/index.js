@@ -1,13 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-
-import About from "../components/About";
-import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Hero from "./hero";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Eugene Goh</title>
         <meta name="description" content="Checkout our cool page" key="desc" />
@@ -30,13 +27,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <About />
+      <main>
+        <Navbar />
+        <Hero />
       </main>
 
-      <footer className={styles.footer}>
-        <Footer />
-      </footer>
-    </div>
+      <footer></footer>
+    </>
   );
 }
