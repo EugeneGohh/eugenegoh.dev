@@ -19,33 +19,13 @@ export default function About() {
 
           <Divider orientation="horizontal" my={3} />
           <p className="mt-2 subpixel-antialiased leading-7 first:mt-0">
-            {`My name is Eugene Goh and I'm a 18-year-old software engineer based on Kuala Lumpur, Malaysia that loves working in a hybrid environment 🌎`}
+            {`My name is Eugene Goh and I'm a 18-year-old software engineer based on Kuala Lumpur, Malaysia. His main interests revolve around software engineering, fintech & product development. Welcome to his digital garden where he shares what he is currently learning about shipping impactful products, becoming a better engineer and growing a career in tech 🌎.`}
           </p>
 
           <br />
 
           <p className="mt-2 subpixel-antialiased leading-7 first:mt-0">
-            {`Most of the time, I'm mostly writing TypeScript, GraphQL and Cloud technologies, and apart from that I love developing contents with technologies I'm passionate about through visualizations & share it over the Internet.`}
-          </p>
-
-          <Divider orientation="horizontal" my={3} />
-
-          <p className="mt-2 subpixel-antialiased leading-7 first:mt-0">
-            {`I've been a full-time software engineer since 2017, and I've had the
-            opportunity to work with some incredible startups ranging from
-            pre-seed to Series D, which has been an amazing learning experience
-            for me, both in terms of technology and business. In 2022, I have
-            been focusing more on developer relations to improve my people
-            skills and get out of my coding comfort zone.`}
-          </p>
-
-          <br />
-
-          <p className="mt-2 subpixel-antialiased leading-7 first:mt-0">
-            {`In my free time, I like to challenge myself to be more creative and
-            improve my tech skills by writing in-depth articles on commonly used
-            technologies and subjects that are often misunderstood or take time
-            to understand. I also enjoy giving talks at conferences and meetups.`}
+            {`Most of the time, I'm mostly writing TypeScript, GraphQL and Cloud technologies. In my free time, I like to challenge myself to be more creative and improve my tech skills by writing in-depth articles on commonly used technologies and subjects that are often misunderstood or take time to understand. I also enjoy attending talks at conferences, meetups & hackathons.`}
           </p>
         </section>
       </Container>
