@@ -21,7 +21,7 @@ export default function Home({ workExperience }) {
   const workExperienceData = workExperience;
 
   return (
-    <>
+    <div>
       <Head>
         <title>Eugene Goh</title>
         <meta name="description" content="Checkout our cool page" key="desc" />
@@ -99,9 +99,9 @@ export default function Home({ workExperience }) {
             <Divider orientation="horizontal" my={3} />
 
             <ol className="relative mt-6 ml-6 border-l border-zinc-400">
-              {workExperienceData.map((item) => {
+              {workExperienceData.map((item, index) => {
                 return (
-                  <>
+                  <span key={index}>
                     <Timeline
                       roleName={item.roleName}
                       companyName={item.companyName}
@@ -109,7 +109,7 @@ export default function Home({ workExperience }) {
                       endingDate={item.endingDate}
                       blockEditor={item.blockEditor}
                     />
-                  </>
+                  </span>
                 );
               })}
             </ol>
@@ -198,7 +198,7 @@ export default function Home({ workExperience }) {
           </section>
         </Container>
       </footer>
-    </>
+    </div>
   );
 }
 

@@ -22,11 +22,14 @@ export default function Timeline({
             {`@${companyName}`}
           </span>
         </h3>
+
         <time className="mb-1 text-sm font-normal leading-none text-gray-400">
           {startingDate} → {endingDate}
         </time>
-        <p className="mb-4 text-base font-normal text-gray-500 prose">
+
+        <span className="mb-4 text-base font-normal text-gray-500 prose">
           <PortableText
+            className="mb-4 text-base font-normal text-gray-500 prose"
             value={blockEditorMapping}
             components={
               {
@@ -34,7 +37,7 @@ export default function Timeline({
               }
             }
           />
-        </p>
+        </span>
       </li>
     </>
   );

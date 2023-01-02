@@ -4,12 +4,10 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <ChakraProvider>
-        <Component {...pageProps} />
-        <Analytics />
-      </ChakraProvider>
-    </>
+    <ChakraProvider>
+      <Component {...pageProps} />
+      <Analytics />
+    </ChakraProvider>
   );
 }
 
